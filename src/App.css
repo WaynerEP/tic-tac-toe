@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 100px;
+}
+
+.game-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  color: #000;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: auto auto auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.square {
+  border: 2px solid #bababa;
+  border-radius: 5px;
+  padding: 3.8em 3.8em;
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+}
+
+.square:hover {
+  background-color: #eaeaea;
+}
+
+.square:focus,
+.square:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-reset {
+  margin-top: 10px;
+  border: 3px solid #e1e1ec;
+  border-radius: 25px;
+  padding: .8em 2.5em;
+  background-color: #3b3b3b;
+}
+
+.btn-reset:hover {
+  background-color: #4d4d4d;
+}
+
+.player-1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-weight: bolder;
+}
+
+.players>span {
+  padding: .5em 1.5em;
+}
+
+.selected {
+  color: #fff;
+  border-radius: 5px;
+  background: #9393f4;
+}
